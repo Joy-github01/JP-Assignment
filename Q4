@@ -1,0 +1,38 @@
+public class ExampleClass {
+
+    // Instance variable
+    private int instanceVariable;
+
+    // Constructor
+    public ExampleClass(int initialValue) {
+        this.instanceVariable = initialValue;
+    }
+
+    // Non-static method
+    public void nonStaticMethod() {
+        System.out.println("Inside non-static method. Instance variable value: " + instanceVariable);
+    }
+
+    // Static method 1
+    public static void staticMethod1() {
+        System.out.println("Inside static method 1.");
+    }
+
+    // Static method 2
+    public static void staticMethod2() {
+        System.out.println("Inside static method 2.");
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        // Creating an instance of ExampleClass using the constructor
+        ExampleClass instance = new ExampleClass(42);
+
+        // Calling the non-static method on the instance
+        instance.nonStaticMethod();
+
+        // Calling the static methods directly on the class
+        ExampleClass.staticMethod1();
+        ExampleClass.staticMethod2();
+    }
+}
